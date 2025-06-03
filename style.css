@@ -91,7 +91,7 @@ section {
         transform: translateY(-2.4rem);
     }
     100% {
-        transform: translateY();
+        transform: translateY(0);
     }
 }
 
@@ -131,7 +131,7 @@ span {
     border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem o;
+    margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
     margin-right: 10px;
 
@@ -346,8 +346,9 @@ span {
         font-size: 2.6rem;
     }
     .home-content h1 {
-        font-size: 5rem;
-    }
+    font-size: clamp(3rem, 6vw, 5.6rem);
+}
+
     .home-img img {
         width: 40vw;
         margin-top: 4rem;

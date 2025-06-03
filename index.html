@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    
   </head>
 
   <body>
@@ -19,8 +20,8 @@
       <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
+        <a href="#about ">About</a>
+      <a href="#projects">Projects</a>
         <!-- <a href="#portfolio">Portfolio</a> -->
         <a href="#contact">Contact</a>
       </nav>
@@ -29,12 +30,12 @@
     <section class="home" id="home">
       <div class="home-content">
         <h3>Hello, It's Me</h3>
-        <h1>Ashish kumar</h1>
+        <h1>Ashish Kumar</h1>
         <h3>And I'm a <span class="multiple-text"></span></h3>
         <p>
           Hello World! I'm Ashish Kumar, a versatile creator at the intersection
           of technology and visual storytelling. As a passionate Full Stack
-          Developer, Video Editor, and Graphic Designer, I thrive on
+          Developer and Graphic Designer, I thrive on
           transforming ideas into immersive digital masterpieces.
         </p>
         <div class="social-media">
@@ -54,48 +55,31 @@
         <a
           href="https://drive.google.com/file/d/1bcjgQgSY8ZvUW-VcHMx8HSZVedm7eHoY/view?usp=drive_link"
           class="btn"
-          >Download CV</a
+          > Resume</a
         >
       </div>
       <div class="home-img">
-        <img src="img2.jpg" alt="" height="300px" />
+        <img src="img2.jpg" alt="Profile picture of Ashish Kumar" height="300px" />
       </div>
     </section>
+   
     <!-- about section design -->
     <section class="about" id="about">
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
-        <h3>Fullstack Developer!</h3>
-        <p>
-          Greetings! I'm a passionate Fullstack Developer on a mission to shape
-          the digital landscape by seamlessly blending technology with design
-          aesthetics.Diving deep into the realms of HTML, CSS, JavaScript, React
-          JS , Node JS and Mongo DB. I translate ideas into interactive and
-          visually stunning interfaces. Crafting not just websites but immersive
-          experiences, I believe in the power of clean, efficient code to
-          transform visions into digital realities.
-        </p>
-
-        <a href="#" class="btn">Read More</a>
-      </div>
-    </section>
-    <!-- services section design -->
-    <section class="services" id="services">
-      <h2 class="heading">our <span>services</span></h2>
       <div class="services-container">
         <div class="services-box">
           <i class="bx bx-code-alt"></i>
-          <h3>Web Development</h3>
+          <h3>Fullstack Development</h3>
           <p>
-            Hello there! I'm Ashish Kumar, a passionate web developer dedicated
+            Hello there! I'm Ashish Kumar, a passionate frontend and backend developer dedicated
             to transforming ideas into interactive and visually appealing
             digital experiences. With a keen eye for detail and a love for
             clean, efficient code, I thrive on creating websites and web
             applications that not only meet but exceed expectations.
           </p>
-
-          <a href="#" class="btn">Read More</a>
         </div>
+
         <div class="services-box">
           <i class="bx bxs-paint"></i>
           <h3>Graphic Design</h3>
@@ -107,25 +91,45 @@
             techniques, and I’m always looking for new ways to enhance my
             skills.
           </p>
-
-          <a href="#" class="btn">Read More</a>
         </div>
-        <!--
-    <div class="services-box">
-      <i class='bx bx-bar-chart-alt'></i>
-      <h3>Digital Marketing</h3>
-      <p>Greetings! I am Ashish Kumar, your dedicated digital marketing maestro. With a passion for propelling brands to new heights in the digital sphere, I bring a wealth of experience and expertise to craft tailored, results-driven strategies digital marketer at the helm.</p>
-      
-      <a href="#" class="btn">Read More</a>
-      
-    </div>
-    -->
       </div>
-    </section>
 
+    </section>
+    <!-- project section design -->
+    <section class="projects" id="projects">
+  <div class="about-content">
+    <h2 class="heading">Projects</h2>
+    <div class="services-container">
+
+      <div class="services-box">
+        <!-- <i class="bx bx-code-alt"></i> -->
+        <h3>Calorie Tracker</h3>
+        <p>
+          Designed and developed a full-stack web application to track and manage daily caloric intake, helping users monitor their diet and achieve fitness goals.
+          Built RESTful APIs using Node.js and Express.js for handling food logging, calorie calculations, and secure user data management.
+        </p>
+        <a href="https://calorie-tracker-7ck3.vercel.app/" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+      <div class="services-box">
+        <!-- <i class="bx bx-code-alt"></i> -->
+        <h3>Movie-X</h3>
+        <p>
+          Developed a React-based movie application using Vite, ensuring fast build times and an optimized development experience.
+          Implemented Hot Module Replacement (HMR) for seamless real-time updates during development.
+        </p>
+        <a href="https://moviex-weld-ten.vercel.app/" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+        
+<!-- contact section -->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
-      <form action="#">
+      <form action="https://formspree.io/account" method="POST">
         <div class="input-box">
           <input type="text" placeholder="Full Name" />
           <input type="email" placeholder="Email Address" />
@@ -144,10 +148,10 @@
         <input type="submit" value="Send Message" class="btn" />
       </form>
     </section>
-    <!-- footer design -->
+     <!-- footer design -->
     <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy;2023 by Ashish Yadav | All Rights Reserved.</p>
+        <p>Copyright &copy;2023 by Ashish Kumar | All Rights Reserved.</p>
       </div>
       <div class="footer-iconTop">
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>

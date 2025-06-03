@@ -19,21 +19,27 @@ window.onscroll = () => {
     let id = sec.getAttribute("id");
 
     if (top >= offset && top < offset + height) {
-      navlinks.forEach((links) => {
-        links.classList.remove("active");
-        document
-          .querySelector("header nav a[href*=" + id + "]")
-          .classList.add("active");
-      });
-    }
+  navLinks.forEach((links) => {
+    links.classList.remove("active");
+    document
+      .querySelector("header nav a[href*=" + id + "]")
+      .classList.add("active");
+  });
+}
+
   });
   //   sticky navbar//
   let header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 100);
 };
 /*============remove toggle icon and navbar when click navbar link(scroll)*/
-menuIcon.classList.remove("bx-x");
-navbar.classList.remove("active");
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    menuIcon.classList.remove("bx-x");
+    navbar.classList.remove("active");
+  });
+});
+
 
 /*=========scroll reveal =======*/
 ScrollReveal({
@@ -52,9 +58,9 @@ ScrollReveal().reveal(".home-content p,  .about-content", { origin: "left" });
 
 /*typed js */
 const typed = new Typed(".multiple-text", {
-  strings: ["Fullstack Developer", "Video Editor", "Graphic Designer"],
+  strings: ["Fullstack Developer","Graphic Designer"],
   typeSpeed: 100,
-  backSpeed: 100,
-  backDelay: 1000,
+  backSpeed: 80,
+  backDelay: 100,
   loop: true,
 });
